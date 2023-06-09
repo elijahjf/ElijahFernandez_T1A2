@@ -5,8 +5,8 @@
 ---
 
 - [Published portfolio webiste](https://elijahfernandez.netlify.app)
-- [Github repo](https://github.com/elijahjf/ElijahFernandez_T1A2)
-- [Presentation video](https://vimeo.com/user197620247)
+- [Github repo](https://github.com/elijahjf/elijahfernandez_T1A2)
+- [Presentation video](https://vimeo.com/834644742?share=copy)
 
 ## Purpose
 
