@@ -1,0 +1,24 @@
+/* Screensize definitions */
+
+/* min = this size or greater until overridden*/
+/* max = this size or lesser until overridden*/
+
+/* Mobile or small device */
+/* 35.5em = 568px */
+$screen-sm-min: 35.5em;
+
+/* Tablet or medium device */
+/* 48em = 768px - changed to 39.5em = 632px for responsive design*/
+$screen-md-min: 39.5em;
+
+/* medium large size for small laptop */
+/* added for responsive design 49.5em 792px */
+$screen-mdlg-min: 49.5em;
+
+/* Desktop or large device */
+/* 64em = 1024px - changed to 72.5 = 1160px for responsive design */
+$screen-lg-min: 72.5em;
+
+/* xl Desktop or xlarge device */
+/* 80em = 1280px */
+$screen-xlg-min: 80em;

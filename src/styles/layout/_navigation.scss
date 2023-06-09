@@ -1,0 +1,131 @@
+.nav {
+    background-color: $clr-light-secondary;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+
+.nav__home a {
+    float: right;
+    padding: 1rem 1rem 1rem 2rem;
+}
+
+.nav__menu--list {
+    clear:both; // forces menu down
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    list-style: none;
+    overflow: hidden;
+
+    a {
+        display: block;
+        padding: 0 1rem .5rem;
+        text-decoration: none;
+        color: $clr-dark-primary;
+    }
+
+    a:hover {
+        color: $clr-accent-primary;
+    }
+}
+/* using before and after to make top nad bottom nav menu lines. When clicked on, the biddle line disapears and tbe top and bottom lines reposition to the center and rotate to be on a 45 agree angle to craete an X shape */
+.nav__menu--btn {
+    padding: 2rem 3rem 0.5rem;
+    position: relative; /* because we want to use absolute on the span */
+    cursor: pointer;
+
+    &:hover .nav__menu--lines::before {
+        top: -.5rem;
+    }
+    
+    &:hover .nav__menu--lines::after {
+        top: .5rem;
+    }
+
+    .nav__menu--lines {
+        margin-left: 1.25rem;
+        margin-top: .5rem;
+        position: relative;
+        transition: background .2 ease-out;
+
+        &, &::before, &::after {
+            background-color: $clr-dark-primary;
+            display: block; 
+            height: 2px;
+            width: 1.2rem;
+        }
+
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: all .2s;
+        }
+
+        &::before {
+            top: -.4rem;
+        }
+
+        &::after {
+            top: .4rem;
+        }
+
+       
+    }
+}
+
+/* the checkbox allows us to do this hamburger without css using combinators and siblings */
+.nav__menu--checkbox{
+    display: none;
+}
+
+.nav__menu--checkbox:checked ~ .nav__menu--list {
+    background-color: transparent;
+    max-height: 15rem;
+}
+
+.nav__menu--checkbox:checked ~ .nav__menu--btn .nav__menu--lines{
+    background: transparent;
+}
+
+/* 360 - 45 = 315 */
+/* doing a longer degree spin so that the animation has more flair */
+.nav__menu--checkbox:checked ~ .nav__menu--btn .nav__menu--lines:before{
+    transform: rotate(-315deg);
+    top: 0;
+}
+
+.nav__menu--checkbox:checked ~ .nav__menu--btn .nav__menu--lines:after{
+    transform: rotate(315deg);
+    top: 0;
+}
+
+/* at tablet size show menu list */
+@media screen and (min-width: $screen-md-min) {
+
+    .nav__menu--list {
+        clear: none;
+        float: left;
+        max-height: none;
+
+        li {
+            float: left; /* reverses list order */
+        }
+    
+        a {
+            padding: 1rem;
+        }
+    }
+
+    .nav__menu--btn {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+

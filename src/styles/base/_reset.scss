@@ -1,0 +1,38 @@
+/* basic settings that lay as default stylings until overridden */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* if page is longer than content provided, there will be a gap between main and footer - this is seen on iPhone XR */
+}
+
+/* space for footer height */
+/* this flex affects header, nav, main */
+.content-wrap {
+    flex: 1; /* signifies that the width of all other elements will be the same as their content, but the element with flex: 1 will be given the remaining full space. */
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+body {
+    background-color: $clr-light-primary;
+}
+
+main {
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+p {
+    padding-bottom: 1rem;
+}
+
+i {
+    color: $clr-dark-primary;
+}

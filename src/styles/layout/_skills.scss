@@ -1,0 +1,11 @@
+.skills__tag {
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+

@@ -1,0 +1,185 @@
+/* primary place for styling with size, fonts, colors */
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+$font-family: Poppins, sans-serif;
+
+/* Weights */
+$text-light: 300;
+$text-regular: 400;
+$text-bold: 700;
+
+/* Styles */
+body {
+    font-family: $font-family;
+    font-weight: $text-light;
+    font-size: 1rem; /* 16px */
+    line-height: 1.25;
+    color: $clr-dark-primary;
+}
+
+/* button background colored animation */
+@keyframes clr-animation {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+h1 {
+    font-family: $font-family;
+    font-weight: $text-bold;
+    font-size: 2rem; /* 32px */
+    line-height: 1.25;
+    color: $clr-dark-primary;
+    margin-bottom: .5rem;
+
+    .highlight {
+        color: $clr-accent-secondary;
+        cursor: pointer;
+    }
+}    
+
+h2 {
+    font-family: $font-family;
+    font-weight: $text-bold;
+    font-size: 1.625rem; /* 26px */
+    line-height: 1.15384615;
+    color: $clr-dark-primary;
+}
+
+h3 {
+    font-family: $font-family;
+    font-weight: $text-bold;
+    font-size: 1.375rem; /* 22px */
+    line-height: 1.13636364;
+    color: $clr-dark-primary;
+  }
+
+p {
+    color: $clr-dark-primary;
+    font-family: $font-family;
+    font-weight: $text-light;
+    font-size: 1rem; /* 16px */
+    line-height: 1.25;
+}
+
+i {
+    color: $clr-dark-primary;
+}
+
+/* styles for my skills tag boxes */
+.skills__tag li {
+    list-style: none;
+    background-color: $clr-accent-primary;
+    color: $clr-light-secondary;
+    padding: 0.25rem 0.7rem; //check
+    margin: 0px 0.5rem 0.5rem 0px; //check
+    font-size: 1rem; /* 16px */
+    line-height: 1.25;  
+    font-weight: $text-regular;
+    border-radius: 0.125rem;
+}
+
+.skills {
+    h2 {
+     padding-bottom: 1rem;
+    }
+ }
+
+ /* email styles */
+.email__link {
+    font-family: $font-family;
+    font-weight: $text-light;
+    font-size: 1rem; /* 16px */
+    line-height: 1.25; 
+    color: $clr-dark-primary;
+}
+
+/* text and color related button styles */
+button {
+    font-family: $font-family;
+    font-weight: $text-bold;
+    font-size: 1rem; /* 16px */
+    line-height: 1.25; 
+    color: $clr-dark-primary;
+}
+
+/* contact form styles */
+.form__label, .form__input {
+    color: $clr-dark-primary;
+    font-family: $font-family;
+    font-weight: $text-light;
+    font-size: 1rem; /* 16px */
+    line-height: 1.25; 
+}
+
+.post__heading {
+    padding-bottom: 1rem;
+}
+
+/* medium screen font and margin styles */
+@media screen and (min-width: $screen-md-min) {
+    main {
+        //margin-inline: 3rem; // 3rem
+        margin-left: auto;
+        margin-right: auto; 
+    }
+}
+@media screen and (min-width: $screen-md-min) {
+    h1 {
+        font-size: 4rem; /* 40px = 2.5rem / 64px = 4rem*/
+        line-height: 1.125;
+    }
+}
+
+@media screen and (min-width: $screen-md-min) {
+    h2 {
+        font-size: 2rem; /* 32px */
+        line-height: 1.125;
+    }
+}
+
+@media screen and (min-width: $screen-md-min) {
+    h3 {
+        font-size: 1.5rem; /* 24px */
+        line-height: 1.25;
+    }
+}
+
+@media screen and (min-width: $screen-md-min) {
+    p, button, .form__label, .form__input, .email__link {
+        line-height: 1.375rem;
+    }
+}
+
+/* large screen font and margin styles */
+@media screen and (min-width: $screen-lg-min) {
+    h1 {
+        font-size: 4.5rem; /* 48px 3rem, 72px 4.5rem*/ 
+        line-height: 1.05;
+    }
+}
+
+@media screen and (min-width: $screen-lg-min) {
+    h2 {
+        font-size: 2.25rem; /* 36 */
+        line-height: 1.125;
+    }
+}
+
+@media screen and (min-width: $screen-lg-min) {
+    h3 {
+        font-size: 1.75rem; /* 28px */
+        line-height: 1.25;
+    }
+}
+
+@media screen and (min-width: $screen-lg-min) {
+    p, button, .form__label, .form__input, .email__link {
+        line-height: 1.375rem;
+    }
+}

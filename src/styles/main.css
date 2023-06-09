@@ -1,0 +1,734 @@
+/* list of my colors as variables */ /* Screensize definitions */
+/* min = this size or greater until overridden*/
+/* max = this size or lesser until overridden*/
+/* Mobile or small device */
+/* 35.5em = 568px */
+/* Tablet or medium device */
+/* 48em = 768px - changed to 39.5em = 632px for responsive design*/
+/* medium large size for small laptop */
+/* added for responsive design 49.5em 792px */
+/* Desktop or large device */
+/* 64em = 1024px - changed to 72.5 = 1160px for responsive design */
+/* xl Desktop or xlarge device */
+/* 80em = 1280px */
+/* basic settings that lay as default stylings until overridden */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* if page is longer than content provided, there will be a gap between main and footer - this is seen on iPhone XR */
+}
+
+/* space for footer height */
+/* this flex affects header, nav, main */
+.content-wrap {
+  flex: 1; /* signifies that the width of all other elements will be the same as their content, but the element with flex: 1 will be given the remaining full space. */
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+body {
+  background-color: #F8F5F2;
+}
+
+main {
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+p {
+  padding-bottom: 1rem;
+}
+
+i {
+  color: #232323;
+}
+
+/* primary place for styling with size, fonts, colors */
+/* Google fonts */
+/* Weights */
+/* Styles */
+body {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 1rem; /* 16px */
+  line-height: 1.25;
+  color: #232323;
+}
+
+/* button background colored animation */
+@keyframes clr-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+h1 {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 2rem; /* 32px */
+  line-height: 1.25;
+  color: #232323;
+  margin-bottom: 0.5rem;
+}
+h1 .highlight {
+  color: #F45D48;
+  cursor: pointer;
+}
+
+h2 {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 1.625rem; /* 26px */
+  line-height: 1.15384615;
+  color: #232323;
+}
+
+h3 {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 1.375rem; /* 22px */
+  line-height: 1.13636364;
+  color: #232323;
+}
+
+p {
+  color: #232323;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 1rem; /* 16px */
+  line-height: 1.25;
+}
+
+i {
+  color: #232323;
+}
+
+/* styles for my skills tag boxes */
+.skills__tag li {
+  list-style: none;
+  background-color: #078080;
+  color: #FFFFFE;
+  padding: 0.25rem 0.7rem;
+  margin: 0px 0.5rem 0.5rem 0px;
+  font-size: 1rem; /* 16px */
+  line-height: 1.25;
+  font-weight: 400;
+  border-radius: 0.125rem;
+}
+
+.skills h2 {
+  padding-bottom: 1rem;
+}
+
+/* email styles */
+.email__link {
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 1rem; /* 16px */
+  line-height: 1.25;
+  color: #232323;
+}
+
+/* text and color related button styles */
+button {
+  font-family: Poppins, sans-serif;
+  font-weight: 700;
+  font-size: 1rem; /* 16px */
+  line-height: 1.25;
+  color: #232323;
+}
+
+/* contact form styles */
+.form__label, .form__input {
+  color: #232323;
+  font-family: Poppins, sans-serif;
+  font-weight: 300;
+  font-size: 1rem; /* 16px */
+  line-height: 1.25;
+}
+
+.post__heading {
+  padding-bottom: 1rem;
+}
+
+/* medium screen font and margin styles */
+@media screen and (min-width: 39.5em) {
+  main {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 39.5em) {
+  h1 {
+    font-size: 4rem; /* 40px = 2.5rem / 64px = 4rem*/
+    line-height: 1.125;
+  }
+}
+@media screen and (min-width: 39.5em) {
+  h2 {
+    font-size: 2rem; /* 32px */
+    line-height: 1.125;
+  }
+}
+@media screen and (min-width: 39.5em) {
+  h3 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 39.5em) {
+  p, button, .form__label, .form__input, .email__link {
+    line-height: 1.375rem;
+  }
+}
+/* large screen font and margin styles */
+@media screen and (min-width: 72.5em) {
+  h1 {
+    font-size: 4.5rem; /* 48px 3rem, 72px 4.5rem*/
+    line-height: 1.05;
+  }
+}
+@media screen and (min-width: 72.5em) {
+  h2 {
+    font-size: 2.25rem; /* 36 */
+    line-height: 1.125;
+  }
+}
+@media screen and (min-width: 72.5em) {
+  h3 {
+    font-size: 1.75rem; /* 28px */
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 72.5em) {
+  p, button, .form__label, .form__input, .email__link {
+    line-height: 1.375rem;
+  }
+}
+.reachout, .blog__btn, .project__btn, .resume__btn, #form__submit {
+  cursor: pointer;
+  background-color: #F45D48;
+  border-radius: 0.125rem;
+  border: none;
+  padding-inline: 0.8rem;
+  padding-block: 0.5rem;
+  /* adding a gradient to the button */
+  background-image: linear-gradient(45deg, #F45D48, #ffbf35);
+  background-size: 600%; /* this is making the linear gradient image larger */
+  background-position: left; /* positioning to the left of the large image */
+  transition: background-position 1s; /* how long it takes to change states - in this case: get from the left of the image to the right of the image */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* this enables the gradient animation effect to occur by transitioning from left to right over a large gradient image on hover/focus */
+.reachout:hover, .reachout:focus, .blog__btn:hover, .blog__btn:focus, .project__btn:hover, .project_btn:focus, .resume__btn:hover, .resume_btn:focus, #form__submit:hover, #form__submit:focus {
+  background-position: right;
+}
+
+#reachout {
+  margin-bottom: 1rem;
+}
+
+.blog__btn {
+  background-image: linear-gradient(45deg, #FFFFFE, #078080);
+  padding-inline: 0.8rem;
+  padding-block: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+.project__btn {
+  margin-top: 1rem;
+  background-image: linear-gradient(45deg, #FFFFFE, #F45D48);
+  padding-inline: 0.8rem;
+  padding-block: 0.3rem;
+}
+
+.resume__btn {
+  margin-left: 1rem;
+}
+
+#form__submit {
+  background-image: linear-gradient(45deg, #F45D48, #ffbf35);
+  padding-inline: 7rem;
+  padding-block: 0.3rem;
+}
+
+#form__submit {
+  padding: 0.5rem;
+  width: 20rem;
+}
+
+form {
+  margin: 2rem 0px;
+  outline: 1px solid #F45D48;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1rem 1rem 1rem;
+  max-width: 22rem;
+  height: 27rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+form .form__label {
+  text-align: left;
+}
+form input[type=text], form textarea {
+  width: 20rem;
+}
+
+.contact-page {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  /* all form elements except first name */
+}
+.contact-page .form__elements:not(#fname) {
+  margin: 1rem 0px;
+}
+
+@media screen and (min-width: 39.5em) {
+  form {
+    height: 29rem;
+  }
+}
+/* positioning footer to always be near bottom of screen with desired sizing, background color, and text alignment */
+footer {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #FFFFFE;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  /* aligning icons and text with desired spacing */
+}
+footer p, footer .social__links {
+  display: inline-block;
+  margin: 0.5rem 2rem;
+  /* spaces out icons to mkae thme easier to press while still staying on one line */
+}
+footer p i, footer .social__links i {
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+}
+
+/* this padding on text keeps the footer at the bottom of the page */
+#copyright {
+  padding: 0;
+}
+
+/* breakpoints for footer with medium screens */
+@media screen and (min-width: 39.5em) {
+  /* making fa-icons larger at medium screen and wider to make them easier to see and select*/
+  .social__links i {
+    width: 4rem;
+    transform: scale(1.25);
+  }
+  /* extend footer size at medium screen to fit larger elements*/
+  footer {
+    height: 3.5rem;
+  }
+}
+.aboutshort {
+  padding-top: 1rem;
+}
+
+h2 {
+  padding-bottom: 1rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.contact .conversation {
+  padding-bottom: 1rem;
+}
+.contact .email {
+  padding-bottom: 1rem;
+}
+.contact a:link {
+  text-decoration: none;
+}
+.contact a:visited {
+  text-decoration: none;
+}
+.contact a:hover {
+  text-decoration: underline;
+}
+.contact a:active {
+  text-decoration: underline;
+}
+.contact .contact__btn {
+  margin: 0.75rem 0px 0px 1rem;
+}
+
+@media screen and (min-width: 72.5em) {
+  #contact__section .conversation {
+    display: inline;
+    line-height: 2rem;
+  }
+}
+@media screen and (min-width: 80em) {
+  #contact__section .conversation {
+    display: inline;
+    line-height: 2rem;
+  }
+}
+.nav {
+  background-color: #FFFFFE;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav__home a {
+  float: right;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.nav__menu--list {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  list-style: none;
+  overflow: hidden;
+}
+.nav__menu--list a {
+  display: block;
+  padding: 0 1rem 0.5rem;
+  text-decoration: none;
+  color: #232323;
+}
+.nav__menu--list a:hover {
+  color: #078080;
+}
+
+/* using before and after to make top nad bottom nav menu lines. When clicked on, the biddle line disapears and tbe top and bottom lines reposition to the center and rotate to be on a 45 agree angle to craete an X shape */
+.nav__menu--btn {
+  padding: 2rem 3rem 0.5rem;
+  position: relative; /* because we want to use absolute on the span */
+  cursor: pointer;
+}
+.nav__menu--btn:hover .nav__menu--lines::before {
+  top: -0.5rem;
+}
+.nav__menu--btn:hover .nav__menu--lines::after {
+  top: 0.5rem;
+}
+.nav__menu--btn .nav__menu--lines {
+  margin-left: 1.25rem;
+  margin-top: 0.5rem;
+  position: relative;
+  transition: background 0.2 ease-out;
+}
+.nav__menu--btn .nav__menu--lines, .nav__menu--btn .nav__menu--lines::before, .nav__menu--btn .nav__menu--lines::after {
+  background-color: #232323;
+  display: block;
+  height: 2px;
+  width: 1.2rem;
+}
+.nav__menu--btn .nav__menu--lines::before, .nav__menu--btn .nav__menu--lines::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+.nav__menu--btn .nav__menu--lines::before {
+  top: -0.4rem;
+}
+.nav__menu--btn .nav__menu--lines::after {
+  top: 0.4rem;
+}
+
+/* the checkbox allows us to do this hamburger without css using combinators and siblings */
+.nav__menu--checkbox {
+  display: none;
+}
+
+.nav__menu--checkbox:checked ~ .nav__menu--list {
+  background-color: transparent;
+  max-height: 15rem;
+}
+
+.nav__menu--checkbox:checked ~ .nav__menu--btn .nav__menu--lines {
+  background: transparent;
+}
+
+/* 360 - 45 = 315 */
+/* doing a longer degree spin so that the animation has more flair */
+.nav__menu--checkbox:checked ~ .nav__menu--btn .nav__menu--lines:before {
+  transform: rotate(-315deg);
+  top: 0;
+}
+
+.nav__menu--checkbox:checked ~ .nav__menu--btn .nav__menu--lines:after {
+  transform: rotate(315deg);
+  top: 0;
+}
+
+/* at tablet size show menu list */
+@media screen and (min-width: 39.5em) {
+  .nav__menu--list {
+    clear: none;
+    float: left;
+    max-height: none;
+  }
+  .nav__menu--list li {
+    float: left; /* reverses list order */
+  }
+  .nav__menu--list a {
+    padding: 1rem;
+  }
+  .nav__menu--btn {
+    display: none;
+  }
+}
+/* adding responsive inline margins to posts and back button inclusive */
+@media screen and (min-width: 49.5em) {
+  .margin--postt {
+    margin-inline: 6rem;
+  }
+}
+@media screen and (min-width: 72.5em) {
+  .margin--post {
+    margin-inline: 10rem;
+  }
+}
+@media screen and (min-width: 80em) {
+  .margin--postt {
+    margin-inline: 14rem;
+  }
+}
+.post {
+  display: flex;
+}
+.post__img {
+  z-index: -1;
+  position: absolute;
+  top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  border-radius: 0.25rem;
+  max-width: auto;
+  height: 16rem;
+}
+
+.post__space {
+  margin-top: 22rem;
+}
+
+.post-view-title {
+  text-align: center;
+}
+
+.project__1 {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(244, 93, 72, 0.412)), url(/images/project1.jpg);
+}
+
+.project__2 {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(244, 93, 72, 0.412)), url(/images/project2.jpg);
+}
+
+.project__3 {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(244, 93, 72, 0.412)), url(/images/project3.jpg);
+}
+
+.skills__tag ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Pages */
+#img-skills--about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* at a medium display size, the skills section will be centered instead of left aligned (stretch) */
+@media screen and (min-width: 39.5em) {
+  #img-skills--about {
+    align-items: center;
+  }
+}
+@media screen and (min-width: 49.5em) {
+  #margin--about {
+    margin-inline: 6rem;
+  }
+  #img-skills--about {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 72.5em) {
+  #margin--about {
+    margin-inline: 10rem;
+  }
+}
+@media screen and (min-width: 80em) {
+  #margin--about {
+    margin-inline: 14rem;
+  }
+}
+/* Title with padding on top to sit nicely under navbar */
+.post-view-title {
+  padding-top: 4rem;
+}
+
+/* Blog wrapper */
+.blog {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 1rem;
+  /* adding images to background of cards for subtle texture */
+}
+.blog article {
+  padding: 1rem;
+  margin: 1rem 0px;
+  border-radius: 0.3rem;
+  background-color: #FFFFFE;
+  transition: 0.2s ease-out;
+  outline: 1px solid #232323;
+  width: 18rem;
+  height: 19.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  background-size: auto 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.blog article:hover, .blog article:focus {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.blog a {
+  text-decoration: none;
+}
+.blog h3, .blog__title {
+  padding-bottom: 1rem;
+  color: #232323;
+}
+.blog p {
+  padding-bottom: 0;
+  color: #232323;
+}
+.blog__btn {
+  margin-top: 0.5rem;
+}
+.blog__description {
+  margin-top: 1rem;
+}
+.blog__author {
+  margin-top: 1rem;
+}
+.blog__1 {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(7, 128, 128, 0.412)), url(/images/1.jpg);
+}
+.blog__2 {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(7, 128, 128, 0.412)), url(/images/2.jpg);
+}
+.blog__3 {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(7, 128, 128, 0.412)), url(/images/3.jpg);
+}
+.blog__4 {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(7, 128, 128, 0.412)), url(/images/4.jpg);
+}
+.blog__5 {
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(7, 128, 128, 0.412)), url(/images/5.jpg);
+}
+
+@media screen and (min-width: 39.5em) {
+  .blog article {
+    height: 21rem;
+  }
+}
+@media screen and (min-width: 72.5em) {
+  .blog article {
+    width: 21rem;
+    height: 23rem;
+  }
+}
+#contact {
+  margin-top: 4rem;
+}
+
+.contact__thanks {
+  margin-bottom: 1rem;
+}
+
+#github__contact, #linkedin__contact {
+  transform: scale(2);
+  width: 2rem;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* setting and flex positioning */
+#flex--home {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* n/s middle */
+  align-items: flex-start; /* e/w middle */
+}
+#flex--home .hero {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-end; /* puts the hero text at bobttom near thumb instead of top near hair */
+  margin-left: auto;
+  margin-right: auto;
+}
+#flex--home .skills-aboutshort--home {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hero__img--home {
+  max-width: 16rem;
+  height: auto;
+}
+
+/* medium screen alignment of hero image and skills */
+@media screen and (min-width: 39.5em) {
+  /* hero image sizing and positioning for md screens */
+  #hero__img--home {
+    max-width: 30rem;
+    height: auto;
+  }
+  .skills-aboutshort--home #skills--home {
+    padding-right: 14rem;
+  }
+}
+/* medium screen alignment of hero image and skills */
+@media screen and (min-width: 72.5em) {
+  #hero__img--home {
+    max-width: 27rem; /* 100% img size is 27rem */
+    transform: scale(1.2);
+    height: auto;
+  }
+}/*# sourceMappingURL=main.css.map */

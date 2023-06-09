@@ -1,0 +1,35 @@
+#img-skills--about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* at a medium display size, the skills section will be centered instead of left aligned (stretch) */
+@media screen and (min-width: $screen-md-min) {
+    #img-skills--about {
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: $screen-mdlg-min) {
+    #margin--about {
+        margin-inline: 6rem;
+    }
+
+    #img-skills--about {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: $screen-lg-min) {
+    #margin--about {
+        margin-inline: 10rem;
+    }
+}
+
+@media screen and (min-width: $screen-xlg-min) {
+    #margin--about {
+        margin-inline: 14rem;
+    }
+}

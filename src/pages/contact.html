@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <!-- favicon of a terminal in white -->
+    <link rel="shortcut icon" href="/images/home_icon_white.svg" type="image/x-icon">
+    <title>Elijah's Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <!-- contains all parts in the body -->
+    <div class="page-container">
+        <!-- contains nav and main - made so to seperate from footer -->
+        <div class="content-wrap">
+            <!-- navigation menu -->
+            <nav class="nav">
+                <div class="nav__home">
+                    <a href="/index.html">
+                         <img src="/images/home_icon.svg" alt="home-icon">
+                    </a>
+                </div>
+                <div class="nav__menu">
+                    <!-- <a href="/">
+                         <img src="/images/hamburger_menu.svg" alt="menu-icon">
+                    </a> -->
+                   <!-- input id and label for must be the same -->
+                    <input class="nav__menu--checkbox" type="checkbox" id="nav__menu--toggle"/>
+                    <label class="nav__menu--btn" for="nav__menu--toggle"><span class="nav__menu--lines"></span></label>
+            
+                    <!-- role of list allows screenreaders to say how many items are in a list with a list style of none -->
+                    <ul role=list class="nav__menu--list">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/pages/about.html">About Me</a></li>
+                        <li><a href="/pages/projects.html">Projects</a></li>
+                        <li><a href="/pages/blog.html">Blog</a></li>
+                        <li><a href="/pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- main body of information on the page -->
+            <main>
+                <div class="contact-page">
+                    <section class="contact" id="contact">
+                        <!-- Text to preface contacting me -->
+                        <div class="contact__text">
+                            <!-- thank you message -->
+                            <h2 class="contact__thanks">Thanks for taking the time to look at my portfolio.</h2>
+                            <p>I am open to the right oppertunities, so please reach out via linkedin or email.</p>
+                            <p>Looking forward to connecting. Take care and talk soon!</p>
+                            <!-- link to lick and open users preferred email provider application with a new email addressed to me -->
+                            <div class="email" id="email"><a class="email__link" href="mailto:elijahf.dev@gmail.com">elijahf.dev@gmail.com</a></div>
+                            <a href="https://www.github.com" target="_blank"><i id="github__contact" class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank"><i id="linkedin__contact"  class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </section>
+                    <!-- form for giving information to contact -->
+                    <section class="form">
+                        <form>
+                            <!-- first name -->
+                            <div class="form__elements">
+                                <label class="form__label" for="fname">First name:</label>
+                                <input class="form__input" type="text" id="fname" name="fname" placeholder="Jane">
+                            </div>
+                            <!-- last name -->
+                            <div class="form__elements">
+                                <label class="form__label" for="lname">Last name:</label>
+                                <input class="form__input" type="text" id="lname" name="lname" placeholder="Doe">
+                            </div>
+                            <!-- email -->
+                            <div class="form__elements">
+                                <label class="form__label" for="email">Email:</label>
+                                <input class="form__input" type="text" id="email" name="email" placeholder="jane@janedoe.com">
+                            </div>
+                            <!-- message -->
+                            <div class="form__elements">
+                                <label class="form__label" for="message">Message:</label>
+                                <!-- the rows make it larger to write in a message -->
+                                <textarea class="form__input" rows="6" type="text" id="message" name="message"></textarea>
+                            </div>
+                            <!-- submit -->
+                            <input class="form__input" id="form__submit" type="submit" class="form__btn" value="Submit">
+                        </form>            
+                    </section>
+                </div>
+            </main>
+        </div>
+        <!-- footer at bottom of page -->
+        <footer>
+            <!-- social media icon links in footer from font awesome, each open in a new tab -->            
+            <div class="social__links">
+                <a href="https://www.github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p id="copyright">&copy Elijah Fernandez</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <!-- favicon of a terminal in white -->
+    <link rel="shortcut icon" href="/images/home_icon_white.svg" type="image/x-icon">
+    <title>Elijah's Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <!-- contains all parts in the body -->
+    <div class="page-container">
+        <!-- flex -->
+        <!-- this flex affects header, nav, main -->
+        <!-- contains nav and main - made so to seperate from footer -->
+        <div id="content-wrap--home" class="content-wrap">
+            <!-- navigation menu -->
+            <nav class="nav">
+                <div class="nav__home">
+                    <a href="/index.html">
+                         <img src="/images/home_icon.svg" alt="home-icon">
+                    </a>
+                </div>
+                <div class="nav__menu">
+                    <!-- <a href="/">
+                         <img src="/images/hamburger_menu.svg" alt="menu-icon">
+                    </a> -->
+                   <!-- input id and label for must be the same -->
+                    <input class="nav__menu--checkbox" type="checkbox" id="nav__menu--toggle"/>
+                    <label class="nav__menu--btn" for="nav__menu--toggle"><span class="nav__menu--lines"></span></label>
+            
+                    <!-- role of list allows screenreaders to say how many items are in a list with a list style of none -->
+                    <ul role=list class="nav__menu--list">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/pages/about.html">About Me</a></li>
+                        <li><a href="/pages/projects.html">Projects</a></li>
+                        <li><a href="/pages/blog.html">Blog</a></li>
+                        <li><a href="/pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- main body of information on the page -->
+            <main>
+                <!-- flex -->
+                <!-- this flex affects hero, skills, aboutshort, contact -->
+                <div id="flex--home">
+                    <!-- flex -->
+                    <!-- this flex affects hero__img, hero__space -->
+                    <section class="hero">
+                        <img class=hero__img id="hero__img--home"src="/images/rosiememoji.png" alt="memoji icon of Elijah Fernandez">
+                        <!-- flex -->
+                        <!-- this flex affects title, tagline -->
+                        <div class="hero__space" id="hero__space--home">
+                            <h1>Hi, I'm
+                                <span class="highlight">Elijah</span>
+                            </h1>
+                            <p>I'm a fullstack web developer 💻 <span class="jammer">game jammer 🕹️ and VR enthusiast 🥽</span></p>
+                        </div>
+                    </section>
+                    <div class="skills-aboutshort--home">
+                        <section id="skills--home" class="skills">
+                            <h2 class="skills_title">My Skills</h2>
+                                <div class="skills__tag">
+                                    <ul role=list class="skills__tag--top">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Sass</li>
+                                        <li>Python</li>
+                                    </ul>
+                                    <ul role=list class="skills__tag--bottom">
+                                        <li>Javascript</li>
+                                        <li>Flask</li>
+                                        <li>React</li>
+                                    </ul>
+                                </div>
+                        </section>
+                        <section class="aboutshort--home" class="aboutshort">
+                            <h2>About Me</h2>
+                            <p>Hi, my name is Elijah (he/him) and I am a full stack <span>web developer based in Sydney.</span></p>
+                            <div class="aboutshort__box"></div>
+                        </section>
+                    </div>
+                    <section id="contact__section" class="contact">
+                        <div class="contact__text">
+                            <h2>Let's start a <div class="conversation">conversation</div></h2>
+                            <!-- link to lick and open users preferred email provider application with a new email addressed to me -->
+                            <div class="email"><a class="email__link" href="mailto:elijahf.dev@gmail.com">elijahf.dev@gmail.com</a></div>
+                        </div>
+                        <div class="contact__btn">
+                            <a href="/pages/contact.html"><button type="button" id="reachout--home" class="reachout">Reach out</button></a>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <div id="background__block--home"></div>
+        <!-- footer at bottom of page -->
+        <footer>
+            <!-- social media icon links in footer from font awesome, each open in a new tab -->    
+            <div class="social__links">
+                <a href="https://www.github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p id="copyright">&copy Elijah Fernandez</p>
+        </footer>
+    </div>
+</body>
+</html>

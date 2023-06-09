@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <!-- favicon of a terminal in white -->
+    <link rel="shortcut icon" href="/images/home_icon_white.svg" type="image/x-icon">
+    <title>Elijah's Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <!-- contains all parts in the body -->
+    <div class="page-container">
+        <!-- contains nav and main - made so to seperate from footer -->
+        <div class="content-wrap">
+            <!-- navigation menu -->
+            <nav class="nav">
+                <div class="nav__home">
+                    <a href="/index.html">
+                         <img src="/images/home_icon.svg" alt="home-icon">
+                    </a>
+                </div>
+                <div class="nav__menu">
+                    <!-- <a href="/">
+                         <img src="/images/hamburger_menu.svg" alt="menu-icon">
+                    </a> -->
+                   <!-- input id and label for must be the same -->
+                    <input class="nav__menu--checkbox" type="checkbox" id="nav__menu--toggle"/>
+                    <label class="nav__menu--btn" for="nav__menu--toggle"><span class="nav__menu--lines"></span></label>
+            
+                    <!-- role of list allows screenreaders to say how many items are in a list with a list style of none -->
+                    <ul role=list class="nav__menu--list">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/pages/about.html">About Me</a></li>
+                        <li><a href="/pages/projects.html">Projects</a></li>
+                        <li><a href="/pages/blog.html">Blog</a></li>
+                        <li><a href="/pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- main body of information on the page -->
+            <main id="margin--about">
+                <!-- full about me page -->
+                <div id="about-me--about">
+                    <!-- hero img and skills -->
+                    <div id="img-skills--about">
+                        <img class=hero__img id="hero__img--about" src="/images/rosiememoji.png" alt="memoji icon of Elijah Fernandez">
+                        <!-- skills section -->
+                        <section class="skills" id="skills--about">
+                            <h2 class="skills_title">My Skills</h2>
+                                <div class="skills__tag">
+                                    <ul role=list class="skills__tag--top">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
+                                        <li>Sass</li>
+                                        <li>Python</li>
+                                    </ul>
+                                    <ul role=list class="skills__tag--bottom">
+                                        <li>Javascript</li>
+                                        <li>Flask</li>
+                                        <li>React</li>
+                                    </ul>
+                                </div>
+                        </section>
+                    </div>
+                    <!-- A bio of information about me -->
+                    <section class="about">
+                        <h2>About Me</h2>
+                        <p id="about-me">Hi, my name is Elijah (he/him) and I am a full stack web developer based in Sydney.</p>
+                        <p>I am skilled in both Web Development, C# and Unity Development. Over the last three years I have grown these skills from my time at SAE Institute and the tech start-up company 'Lumina VR'. I am constantly working to develop my skills, working on passion projects, game jams and more recently studying with the Coder Academy.</p>
+                        <p>I am open to new opportunities that will help me take the next step in my career. I want to leverage my web and software development skills to enter the commercial web development industry.</p>
+                        <p>I am well adept at working on Unity projects with a team using Github, I am practised in writing code that is legible to others and clearly commented, I have also created apps and games in Unity for Android, PC, and VR.</p>
+                        <p>I am compassionate, I always strive for my personal best. I enjoy working in an environment where I can collaborate with others and be challenged with exciting and complex work. I hope when looking to bring new people into your workplace, that I am someone you consider.</p>
+                        <p>Connect with me at the link below.</p>
+                    </section>
+                    <!-- this is buttons that go to my contact page and my resume pdf respectfully -->
+                    <section id="contact__about" class="contact">
+                        <!-- contact page on my website which will open in same tab -->
+                        <div class="contact__btn--pages">
+                            <a href="/pages/contact.html"><button type="button" class="reachout" id="reachout">Reach out</button></a>
+                        </div>
+                        <!-- resume pdf link which will open in new tab -->
+                        <div class="resume">
+                            <a href="/docs/Resume_of_Elijah _Fernandez.pdf" target="_blank"><button type="button" class="resume__btn">Resume</button></a>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <!-- footer at bottom of page -->
+        <footer> 
+            <!-- social media icon links in footer from font awesome, each open in a new tab -->
+            <div class="social__links">
+                <a href="https://www.github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p id="copyright">&copy Elijah Fernandez</p>
+        </footer>
+    </div>
+</body>
+</html>

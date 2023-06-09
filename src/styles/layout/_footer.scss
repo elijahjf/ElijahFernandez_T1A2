@@ -1,0 +1,44 @@
+/* positioning footer to always be near bottom of screen with desired sizing, background color, and text alignment */
+footer {
+    width: 100%;
+    height: 2.5rem; // footer height
+    background-color: $clr-light-secondary;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1000;
+
+    /* aligning icons and text with desired spacing */
+    p,  .social__links {
+        display: inline-block;
+        margin: .5rem 2rem;
+
+        /* spaces out icons to mkae thme easier to press while still staying on one line */
+        i {
+          margin-inline-end: 1rem;
+        }
+    }
+}
+
+/* this padding on text keeps the footer at the bottom of the page */
+#copyright {
+    padding: 0;
+}
+
+/* breakpoints for footer with medium screens */
+@media screen and (min-width: $screen-md-min) {
+
+    /* making fa-icons larger at medium screen and wider to make them easier to see and select*/
+  .social__links {
+    i {
+        width: 4rem;
+        transform: scale(1.25);
+    }
+  }
+
+  /* extend footer size at medium screen to fit larger elements*/
+  footer {
+    height: 3.5rem;
+  }
+}

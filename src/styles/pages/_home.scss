@@ -1,0 +1,57 @@
+/* setting and flex positioning */
+#flex--home {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* n/s middle */
+    align-items: flex-start; /* e/w middle */
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end; /* puts the hero text at bobttom near thumb instead of top near hair */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skills-aboutshort--home {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+#hero__img--home {
+    max-width: 16rem; // 54%
+    height: auto;
+}
+
+/* medium screen alignment of hero image and skills */
+@media screen and (min-width: $screen-md-min) {
+    
+    /* hero image sizing and positioning for md screens */
+    #hero__img--home {
+        max-width: 30rem; // 54%20
+        height: auto;
+    }
+
+    .skills-aboutshort--home {
+        #skills--home {
+            padding-right: 14rem;
+        };
+    }
+}
+
+/* medium screen alignment of hero image and skills */
+@media screen and (min-width: $screen-lg-min) {
+
+    #hero__img--home {
+        max-width: 27rem; /* 100% img size is 27rem */
+        transform: scale(1.2);
+        height: auto;
+    }
+}

@@ -1,0 +1,54 @@
+.reachout, .blog__btn, .project__btn, .resume__btn, #form__submit {
+    cursor: pointer;
+    background-color: $clr-accent-secondary;
+    border-radius: 0.125rem;
+    border: none;
+    padding-inline: .8rem;
+    padding-block: 0.5rem;
+    
+   /* adding a gradient to the button */
+    background-image: linear-gradient(45deg, $clr-accent-secondary, #ffbf35);
+    background-size: 600%; /* this is making the linear gradient image larger */
+    background-position: left; /* positioning to the left of the large image */
+    transition: background-position 1s; /* how long it takes to change states - in this case: get from the left of the image to the right of the image */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* this enables the gradient animation effect to occur by transitioning from left to right over a large gradient image on hover/focus */
+.reachout:hover, .reachout:focus, .blog__btn:hover, .blog__btn:focus, .project__btn:hover, .project_btn:focus, .resume__btn:hover, .resume_btn:focus, #form__submit:hover, #form__submit:focus {
+    background-position: right;
+}
+
+#reachout {
+    margin-bottom: 1rem;;
+}
+
+.blog__btn {
+    background-image: linear-gradient(45deg, $clr-light-secondary, $clr-accent-primary);
+    padding-inline: .8rem;
+    padding-block: 0.3rem;
+    margin-bottom: 2rem;
+}
+
+.project__btn {
+    margin-top: 1rem;
+    background-image: linear-gradient(45deg, $clr-light-secondary, $clr-accent-secondary);
+    padding-inline: .8rem;
+    padding-block: 0.3rem;
+}
+
+.resume__btn{
+    margin-left: 1rem;
+}
+
+#form__submit {
+    background-image: linear-gradient(45deg, $clr-accent-secondary, #ffbf35);
+    padding-inline: 7rem;
+    padding-block: 0.3rem;
+}
+
+#form__submit {
+    padding: .5rem;
+    width: 20rem;
+}
+

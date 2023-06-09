@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <!-- favicon of a terminal in white -->
+    <link rel="shortcut icon" href="/images/home_icon_white.svg" type="image/x-icon">
+    <title>Elijah's Portfolio</title>
+
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <!-- contains all parts in the body -->
+    <div class="page-container">
+        <div class="content-wrap">
+            <!-- navigation menu -->
+            <nav class="nav">
+                <div class="nav__home">
+                    <a href="/index.html">
+                         <img src="/images/home_icon.svg" alt="home-icon">
+                    </a>
+                </div>
+                <div class="nav__menu">
+                    <!-- <a href="/">
+                         <img src="/images/hamburger_menu.svg" alt="menu-icon">
+                    </a> -->
+                   <!-- input id and label for must be the same -->
+                    <input class="nav__menu--checkbox" type="checkbox" id="nav__menu--toggle"/>
+                    <label class="nav__menu--btn" for="nav__menu--toggle"><span class="nav__menu--lines"></span></label>
+            
+                    <!-- role of list allows screenreaders to say how many items are in a list with a list style of none -->
+                    <ul role=list class="nav__menu--list">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/pages/about.html">About Me</a></li>
+                        <li><a href="/pages/projects.html">Projects</a></li>
+                        <li><a href="/pages/blog.html">Blog</a></li>
+                        <li><a href="/pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- main body of information on the page -->
+            <main class="margin--post">
+                <section class="post">
+                    <div class="post__img-wrapper"><img class=post__img src="/images/post1.jpg" alt="laptop in dark room"></div>
+                   <!-- spacing text from top of page -->
+                    <div class="post__space">
+                        <h2 class="post__heading">CSS Shadows Simplified</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis esse ullam voluptates quasi accusamus magni commodi eos, quos nobis consequuntur corporis quam suscipit iste officiis excepturi a iusto eum et, molestiae rem explicabo. Est libero doloribus inventore, cumque unde dolore nobis sit, tempora illum architecto temporibus. Aliquid ex laborum quas neque, non suscipit beatae reprehenderit ipsam ullam facere sapiente, numquam deleniti ratione! Eaque tempora vero atque sequi laboriosam vitae obcaecati repellendus dicta quae, consequuntur fugiat dolorem molestiae rem ad et itaque sed fugit magnam possimus eveniet? Earum enim impedit neque explicabo excepturi maxime debitis accusamus non magnam aliquid, placeat perspiciatis!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto est maiores praesentium in error ut dicta hic fugit, nobis quasi sunt placeat nostrum omnis nesciunt voluptatum adipisci rem aperiam doloribus ratione. Nihil magnam amet officiis minima soluta sit qui iste voluptatibus libero optio ducimus inventore minus iure eius temporibus non enim molestias, quisquam harum pariatur esse distinctio voluptas eligendi cupiditate! Accusamus, possimus fuga. At, quia deserunt ad voluptatum delectus optio aliquam suscipit ullam molestias, maiores reprehenderit velit. Est maxime, doloribus odio ducimus recusandae libero perferendis ipsum delectus, aliquid esse qui laborum blanditiis! Distinctio vel culpa veniam tenetur nulla voluptatem totam.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem consequatur necessitatibus earum saepe? Adipisci rerum excepturi, nam provident alias repudiandae quidem voluptatibus, voluptatum dolore labore dolorem autem suscipit ipsum aut, eaque possimus asperiores deleniti consequuntur commodi vero ratione eius maxime? Qui dolor repellat quam debitis vero exercitationem necessitatibus inventore soluta deserunt, amet minima aperiam, et iusto earum commodi quo dolores. Corrupti sequi debitis dolorum? Ex aliquid aut nobis ducimus nostrum eaque eius similique excepturi! Pariatur reprehenderit molestias eum minus, omnis voluptas? Tenetur hic totam vel, molestias, nemo voluptatum eveniet quisquam dolorum quo incidunt voluptates iusto asperiores? Excepturi assumenda dolore dolorem?</p>
+                    </div>
+                </section>
+                <a href="/pages/blog.html"><button type="button" class="blog__btn">Back</button></a>
+            </main>
+            <!-- footer at bottom of page -->
+        </div>
+        <footer>
+            <!-- social media icon links in footer from font awesome, each open in a new tab -->            
+            <div class="social__links">
+                <a href="https://www.github.com" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <p id="copyright">&copy Elijah Fernandez</p>
+        </footer>
+    </div>
+</body>
+</html>
